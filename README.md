@@ -6,6 +6,7 @@ Here I will provide all modifications done for each model I utilized for the eva
 
 ### selftrained
 clone the code on this page: https://github.com/sigmorphon/2023glossingST
+
 on top of the token_class_model.py file, add:
 
 ```python
