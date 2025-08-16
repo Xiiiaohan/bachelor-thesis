@@ -10,8 +10,10 @@ on top of the token_class_model.py file, add:
 
 '''python
 from transformers import set_seed
+'''
 
 and in main(), add:
 
 '''python
 set_seed(21)
+'''
