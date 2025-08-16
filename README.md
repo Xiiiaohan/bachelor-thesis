@@ -13,8 +13,17 @@ on top of the token_class_model.py file, add:
 from transformers import set_seed
 ```
 
+in TrainingArguments, add:
+
+```python
+seed=21
+```
+
 and in main(), add:
 
 ```python
 set_seed(21)
 ```
+
+### doubletrained, morfM, morfS, morfOS
+
