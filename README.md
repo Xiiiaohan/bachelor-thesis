@@ -8,12 +8,12 @@ Here I will provide all modifications done for each model I utilized for the eva
 clone the code on this page: https://github.com/sigmorphon/2023glossingST
 on top of the token_class_model.py file, add:
 
-'''python
+```python
 from transformers import set_seed
-'''
+```
 
 and in main(), add:
 
-'''python
+```python
 set_seed(21)
-'''
+```
