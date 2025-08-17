@@ -25,5 +25,8 @@ and in main(), add:
 set_seed(21)
 ```
 
-### doubletrained, morfM, morfS, morfOS
+### doubletrained
+Simply double the corresponding training dataset and train the baseline model
 
+### morfM, morfS, morfOS
+use code in morfessor.ipynb to generate morphological segmentation. For morfM, take the output file and train the baseline model with it. For morfS, use the method provided in morfessor.ipynb to generate training data. For morfOS, simply combine original training data and morfS training data.
