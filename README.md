@@ -47,6 +47,14 @@ add:
 ```python
 seed_everything(21, workers=True)
 ```
+In the following cases, different seeds are used during training:
+
+Gitksan: ctc open: 61, 5, 58; ctc close: 11, 59, 42    morph open: 59, 58, 8; morph close: 67, 42, 5
+
+Lezgi: ctc close: 42, 67, 16    morph close: 16, 42, 5
+
+Savosavo: ctc open: 1    ctc close: 9
+
 change test_file to real test dataset instead of dev dataset. Use parameters provided in best_hyperparameters.json for training. There are no pamaters provided for Savosavo and Yali.
 
 To train ctc and morph on Savosavo and Yali, simply add language code mappings in all files. For Savosavo: "Savosavo" : "savo"; for Yali: "Yali" : "apah".
