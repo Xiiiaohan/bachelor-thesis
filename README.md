@@ -57,5 +57,5 @@ Savosavo: ctc open: 1    ctc close: 9
 
 change test_file to real test dataset instead of dev dataset. Use parameters provided in best_hyperparameters.json for training. There are no pamaters provided for Savosavo and Yali.
 
-To train ctc and morph on Savosavo and Yali, simply add language code mappings in all files. For Savosavo: "Savosavo" : "savo"; for Yali: "Yali" : "apah".
+To train ctc and morph on Savosavo and Yali, simply add language code mappings in main.py, predict_from_gloss.py, experiment.py. For Savosavo: "Savosavo" : "savo"; for Yali: "Yali" : "apah".
 
