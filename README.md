@@ -1,6 +1,6 @@
 # Bachelor Thesis: An Evaluation of Automatic Interlinear Glossing Models for Low-Resource Languages
 
-Here I will provide all modifications done for each model I utilized for the evaluation. Abbreviations of models used are introduced in the thesis.
+Here I will provide all modifications done for each model I utilized for the evaluation. Abbreviations of models used are introduced in the thesis. Datasets for Savosavo and Yali are provided in the folder dataset.
 
 ## Baseline model from the SIGMORPHON Shared Task
 
