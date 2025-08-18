@@ -5,7 +5,7 @@ Here I will provide all modifications done for each model I utilized for the eva
 ## Baseline model from the SIGMORPHON Shared Task
 
 ### selftrained
-clone the code on this page: https://github.com/sigmorphon/2023glossingST
+clone model on this page: https://github.com/sigmorphon/2023glossingST
 
 on top of the token_class_model.py file, add:
 
@@ -32,7 +32,7 @@ Simply double the corresponding training dataset and train the baseline model
 use code in morfessor.ipynb to generate morphological segmentation. For morfM, take the output file and train the baseline model with it. For morfS, use the method provided in morfessor.ipynb to generate training data. For morfOS, simply combine original training data and morfS training data.
 
 ## TÜ-CL
-clone the cde on this page: https://github.com/LGirrbach/sigmorphon-2023-glossing
+clone model on this page: https://github.com/LGirrbach/sigmorphon-2023-glossing
 
 in main.py, add import:
 ```python
@@ -58,4 +58,22 @@ Savosavo: ctc open: 1    ctc close: 9
 change test_file to real test dataset instead of dev dataset. Use parameters provided in best_hyperparameters.json for training. There are no pamaters provided for Savosavo and Yali.
 
 To train ctc and morph on Savosavo and Yali, simply add language code mappings in main.py, predict_from_gloss.py, experiment.py. For Savosavo: "Savosavo" : "savo"; for Yali: "Yali" : "apah".
+
+## GlossLM
+clone model on this page: https://github.com/lecs-lab/polygloss
+
+retrieve method cloned on this page: https://github.com/michaelpginn/igt-icl.git
+
+change for retreive method: 
+
+in the igt.py file, add 'morpheme: Optional[str]' as attribute.
+
+use code in glossLM.ipynb to generate prediction.
+
+## CRF
+clone the model on this page: https://github.com/shuokabe/crf_glossing.git
+
+for the open track, simply use the model as it is. For closed track, see the folder crf
+
+the pipeline used for training is provided in crf.ipynb
 
