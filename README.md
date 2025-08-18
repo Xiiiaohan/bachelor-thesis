@@ -43,7 +43,7 @@ then, in the same file, after the line:
 ```python
 if __name__ == "__main__":
 ```
-add:
+add seed = 21:
 ```python
 seed_everything(21, workers=True)
 ```
